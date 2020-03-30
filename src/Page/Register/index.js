@@ -37,7 +37,6 @@ export default function Register() {
             alert('Erro no cadastro, tente novament');
         }
 
-
     }
 
     return (
@@ -61,17 +60,20 @@ export default function Register() {
                         type="text"
                         placeholder="Nome da ONG"
                         value={name}
+                        maxLength="100"
                         onChange={event => setName(event.target.value)}
                     />
                     <input
                         type="email"
                         placeholder="E-mail"
                         value={email}
+                        maxLength="100"
                         onChange={event => setEmail(event.target.value)}
                     />
                     <input
                         type="text"
                         placeholder="WhatsApp"
+                        maxLength="15"
                         value={whatsapp}
                         onChange={event => setWhatsapp(event.target.value)}
                     />
@@ -80,12 +82,14 @@ export default function Register() {
                         <input
                             type="text"
                             placeholder="Cidade"
+                            maxLength="100"
                             value={city}
                             onChange={event => setCity(event.target.value)}
                         />
                         <input
                             type="text"
                             placeholder="UF" style={{ width: 50 }}
+                            maxLength="2"
                             value={uf}
                             onChange={event => setUf(event.target.value)}
                         />

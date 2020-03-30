@@ -57,17 +57,20 @@ export default function NewIncident() {
                         type="text"
                         placeholder="Título do caso"
                         value={title}
+                        maxLength="50"
                         onChange={e => setTitle(e.target.value)}
                     />
                     <textarea
                         type="text"
                         placeholder="Descrição"
+                        maxLength="500"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
                     />
                     <input
                         type="text"
                         placeholder="Valor em reais"
+                        maxLength="10"
                         value={value}
                         onChange={e => setValue(e.target.value)}
                     />

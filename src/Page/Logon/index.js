@@ -36,6 +36,7 @@ export default function Logon() {
                     <input
                         placeholder="Sua ID"
                         value={id}
+                        maxLength="15"
                         onChange={event => setId(event.target.value)}
                     />
                     <button className="button" id="btn-entrar-logon" type="submit">Entrar</button>

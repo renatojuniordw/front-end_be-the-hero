@@ -48,7 +48,7 @@ export default function Profile() {
         <div className="profile-container">
             <header>
                 <img src={LogoImg} alt="Be The Hero" />
-                <span>Bem vinda, {ongName}</span>
+                <span>Bem vindo(a), {ongName}</span>
 
                 <Link className="button" to="/incidents/new">Cadastrar novo Caso</Link>
                 <button onClick={handleLogout} type="button">
